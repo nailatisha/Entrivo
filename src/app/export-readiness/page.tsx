@@ -536,8 +536,7 @@ export default function ExportReadinessPage() {
 
       {view === "loading" && (
         <section className="flex min-h-screen flex-col items-center justify-center bg-navy px-6 text-center text-white">
-          <Image src="/entrivo-logo.svg" alt="Entrivo logo" width={180} height={60} priority />
-          <p className="mt-2 text-sm text-white/80">your Bridge to ASEAN</p>
+          <Image src="/entrivo-logo.png" alt="Entrivo logo" width={230} height={40} priority />
           <div className="mt-10 h-2 w-full max-w-md overflow-hidden rounded-full bg-white/20">
             <div className="h-full animate-loading-bar rounded-full bg-sage" />
           </div>

@@ -28,7 +28,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center">
-          <Image src="/entrivo-logo.svg" alt="Entrivo logo" width={340} height={44} priority />
+          <Image src="/entrivo-logo.png" alt="Entrivo logo" width={254} height={44} priority />
         </Link>
 
         <ul className="hidden items-center gap-6 lg:flex">
