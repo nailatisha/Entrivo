@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { EntrivoChatbot } from "@/components/EntrivoChatbot";
 
 export const metadata: Metadata = {
   title: "Entrivo | Your Bridge to ASEAN",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="pt-20">{children}</main>
         <Footer />
+        <EntrivoChatbot />
       </body>
     </html>
   );
