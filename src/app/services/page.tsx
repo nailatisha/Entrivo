@@ -32,7 +32,7 @@ export default function ServicesPage() {
         Every module is designed to be practical, scalable, and MSME-friendly. Mix and match services based on your needs and budget.
       </p>
 
-      <div className="mt-10 space-y-6">
+      <div className="mt-8 space-y-5">
         {modules.map((module) => (
           <article key={module.title} className="rounded-2xl border border-sage/35 bg-white p-6 shadow-sm">
             <h2 className="font-heading text-2xl text-navy">{module.title}</h2>

@@ -13,7 +13,7 @@ export default function AboutPage() {
         Entrivo was founded to close the gap between MSME ambition and cross-border execution. We believe Indonesian businesses of every size deserve clear access to ASEAN opportunities.
       </p>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
+      <div className="mt-8 grid gap-5 md:grid-cols-2">
         <article className="rounded-2xl border border-sage/35 bg-white p-6">
           <h2 className="font-heading text-2xl text-navy">Vision</h2>
           <p className="mt-3 text-sm">
@@ -35,7 +35,7 @@ export default function AboutPage() {
         </p>
       </article>
 
-      <section className="mt-10">
+      <section className="mt-8">
         <h2 className="font-heading text-3xl text-navy">Our Team</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {["Strategy Lead", "Market Analyst", "Regulatory Specialist", "Partnership Manager"].map((role) => (

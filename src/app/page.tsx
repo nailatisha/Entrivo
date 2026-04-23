@@ -20,7 +20,7 @@ export default function HomePage() {
   return (
     <>
       <section className="bg-gradient-to-br from-sage/45 via-light-sage to-warm-white">
-        <div className="section-container grid items-center gap-10 lg:grid-cols-2">
+        <div className="section-container grid items-center gap-8 lg:grid-cols-2">
           <MotionReveal>
             <h1 className="font-heading text-4xl font-semibold leading-tight text-navy sm:text-5xl">
               Your Bridge to ASEAN Starts Here
@@ -29,7 +29,7 @@ export default function HomePage() {
               Entrivo helps Indonesian MSMEs expand into Southeast Asian markets through professional, affordable, and fully
               digital consulting services.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/export-readiness" className="rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy">
                 Start Free Assessment
               </Link>
@@ -60,7 +60,7 @@ export default function HomePage() {
           <MotionReveal>
             <h2 className="font-heading text-3xl text-navy">Why Choose Entrivo</h2>
           </MotionReveal>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
             {advantages.map((item) => (
               <article key={item.title} className="rounded-2xl border border-sage/30 bg-white p-6 shadow-sm">
                 <item.icon className="h-5 w-5 text-gold" />
@@ -77,7 +77,7 @@ export default function HomePage() {
           <MotionReveal>
             <h2 className="font-heading text-3xl text-navy">What You Can Do Here</h2>
           </MotionReveal>
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
             <article className="rounded-2xl border border-sage/30 bg-white p-6 shadow-sm">
               <p className="text-sm font-semibold text-navy">1. Assess Readiness</p>
               <p className="mt-2 text-sm">Get a fast export score and market snapshot for your target ASEAN country.</p>
@@ -91,7 +91,7 @@ export default function HomePage() {
               <p className="mt-2 text-sm">Work with Entrivo experts to execute a practical market-entry plan.</p>
             </article>
           </div>
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/services" className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white">
               View All Services <ArrowRight className="h-4 w-4" />
             </Link>
@@ -108,7 +108,7 @@ export default function HomePage() {
           <p className="mx-auto mt-4 max-w-2xl text-sm text-white/90">
             Start with a quick assessment, then get the right support from Entrivo.
           </p>
-          <Link href="/export-readiness" className="mt-8 inline-flex items-center rounded-full bg-gold px-8 py-3 font-semibold text-navy">
+          <Link href="/export-readiness" className="mt-6 inline-flex items-center rounded-full bg-gold px-8 py-3 font-semibold text-navy">
             Start Free Assessment
           </Link>
         </div>

@@ -13,7 +13,7 @@ export default function ContactPage() {
         Not sure where to start? Let us help you find the right service.
       </p>
 
-      <div className="mt-10 grid gap-8 lg:grid-cols-2">
+      <div className="mt-8 grid gap-6 lg:grid-cols-2">
         <form className="space-y-4 rounded-2xl border border-sage/35 bg-white p-6">
           <input className="w-full rounded-lg border border-sage/40 px-4 py-2 text-sm" placeholder="Full Name" />
           <input className="w-full rounded-lg border border-sage/40 px-4 py-2 text-sm" placeholder="Email Address" type="email" />

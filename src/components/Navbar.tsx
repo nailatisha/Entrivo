@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -28,7 +27,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center">
-          <Image src="/entrivo-logo.png" alt="Entrivo logo" width={254} height={44} priority />
+          <span className="font-heading text-4xl leading-none text-[#2F5F86]">Entrivo</span>
         </Link>
 
         <ul className="hidden items-center gap-6 lg:flex">

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -536,7 +535,7 @@ export default function ExportReadinessPage() {
 
       {view === "loading" && (
         <section className="flex min-h-screen flex-col items-center justify-center bg-navy px-6 text-center text-white">
-          <Image src="/entrivo-logo.png" alt="Entrivo logo" width={230} height={40} priority />
+          <p className="font-heading text-5xl leading-none text-[#2F5F86]">Entrivo</p>
           <div className="mt-10 h-2 w-full max-w-md overflow-hidden rounded-full bg-white/20">
             <div className="h-full animate-loading-bar rounded-full bg-sage" />
           </div>

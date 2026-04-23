@@ -1,12 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
   return (
     <footer className="bg-[#1A1A1A] text-white">
-      <div className="section-container grid gap-8 py-12 md:grid-cols-3">
+      <div className="section-container grid gap-6 py-10 md:grid-cols-3">
         <div>
-          <Image src="/entrivo-logo.png" alt="Entrivo logo" width={205} height={36} />
+          <p className="font-heading text-4xl leading-none text-[#2F5F86]">Entrivo</p>
         </div>
 
         <div>
