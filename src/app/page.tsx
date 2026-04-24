@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { MotionReveal } from "@/components/MotionReveal";
+import { articles } from "@/data/articles";
 
 const advantages: { title: string; text: string; icon: LucideIcon }[] = [
   { title: "Fully Digital", text: "Access services through one integrated website platform.", icon: Building2 },
@@ -97,6 +98,48 @@ export default function HomePage() {
             </Link>
             <Link href="/contact" className="rounded-full border border-navy px-6 py-3 text-sm font-semibold text-navy">
               Talk to Consultant
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-light-sage/70" id="articles">
+        <div className="section-container">
+          <MotionReveal>
+            <p className="text-sm font-semibold uppercase tracking-wide text-navy/70">Articles & Insights</p>
+            <h2 className="mt-2 font-heading text-3xl text-navy">Compliance Risk in ASEAN Countries</h2>
+            <p className="mt-3 max-w-2xl text-sm text-charcoal">
+              Explore practical articles on compliance risk, regulation updates, and market-entry strategy for ASEAN.
+            </p>
+          </MotionReveal>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {articles.map((article, idx) => (
+              <MotionReveal key={article.slug} delay={0.1 * idx}>
+                <article className="rounded-2xl border border-sage/30 bg-white p-6 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-navy/70">{article.category}</p>
+                  <h3 className="mt-3 font-heading text-2xl text-navy">{article.title}</h3>
+                  <p className="mt-2 text-sm text-charcoal">{article.summary}</p>
+                  <div className="mt-5 flex items-center justify-between">
+                    <p className="text-xs font-medium text-charcoal/80">{article.readTime}</p>
+                    <Link
+                      href={`/articles/${article.slug}`}
+                      className="inline-flex items-center gap-2 rounded-full bg-navy px-4 py-2 text-xs font-semibold text-white"
+                    >
+                      Read More <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                  </div>
+                </article>
+              </MotionReveal>
+            ))}
+          </div>
+
+          <div className="mt-6">
+            <Link
+              href="/articles"
+              className="inline-flex items-center gap-2 rounded-full border border-navy px-6 py-3 text-sm font-semibold text-navy"
+            >
+              View All Articles <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>

@@ -15,6 +15,7 @@ export function Footer() {
             <li><Link href="/export-readiness">Export Readiness</Link></li>
             <li><Link href="/about">About Us</Link></li>
             <li><Link href="/services">Our Services</Link></li>
+            <li><Link href="/articles">Articles</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>

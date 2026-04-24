@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -608,9 +609,12 @@ export default function ExportReadinessPage() {
                   <module.icon className="h-6 w-6 text-navy" />
                   <h3 className="mt-3 font-semibold text-navy">{module.name}</h3>
                   <p className="mt-2 text-sm text-charcoal">{module.reason}</p>
-                  <button type="button" className="mt-4 rounded-full bg-navy px-4 py-2 text-xs font-semibold text-white">
+                  <Link
+                    href="/services"
+                    className="mt-4 inline-block rounded-full bg-navy px-4 py-2 text-xs font-semibold text-white transition hover:opacity-90"
+                  >
                     Learn More
-                  </button>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -633,12 +637,18 @@ export default function ExportReadinessPage() {
           <article className="mt-6 rounded-2xl bg-white p-6 shadow-md">
             <h2 className="font-heading text-3xl text-navy">Ready to Take the Next Step?</h2>
             <div className="mt-5 flex flex-wrap gap-3">
-              <button type="button" className="rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy">
+              <Link
+                href="/contact"
+                className="rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy transition hover:opacity-90"
+              >
                 Register and Start Your Expansion
-              </button>
-              <button type="button" className="rounded-full border border-navy px-6 py-3 text-sm font-semibold text-navy">
+              </Link>
+              <Link
+                href="/contact"
+                className="rounded-full border border-navy px-6 py-3 text-sm font-semibold text-navy transition hover:bg-light-sage"
+              >
                 Speak to a Consultant
-              </button>
+              </Link>
               <button type="button" onClick={restart} className="rounded-full border border-sage px-6 py-3 text-sm font-semibold text-charcoal">
                 Retake Assessment
               </button>
